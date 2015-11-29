@@ -5,9 +5,9 @@
   <title>Random Title</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="dist/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="./node_modules/angular/angular.min.js"></script>
   <script src="node_modules/angular-route/angular-route.min.js"></script>
   <script src="node_modules/angular-animate/angular-animate.min.js"></script>
   <script src="js/app.js"></script>
@@ -25,7 +25,7 @@
         <li>Profil</li></a></ul>
   </div>
   <div class="main-container">
-    <div class="main-content"><div ng-view></div>
+    <div class="main-content">
       <form ng-if="activeUser === ''" ng-submit="checkName()">
         <p>First name:</p>
         <input type="text" ng-model="login_name"><br>

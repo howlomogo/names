@@ -180,6 +180,30 @@ input {
 .logout {
   right: 160px; }
 
+.modal--background {
+  z-index: 3000;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .modal--background .modal--container {
+    position: fixed;
+    width: 640px;
+    background-color: #f0f5f9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 64px; }
+  .modal--background .modal--header {
+    width: 100%;
+    padding-bottom: 16px; }
+  .modal--background .modal--body {
+    width: 100%; }
+  .modal--background .modal--footer {
+    width: 100%; }
+
 .home-box1 {
   padding: 179px 0px 64px;
   text-align: center;
@@ -233,7 +257,7 @@ input {
 footer {
   background-color: #343131;
   color: #f0f5f9;
-  padding: 32px; }
+  padding: 64px; }
 
 .main-container {
   display: -webkit-box;
@@ -250,20 +274,3 @@ footer {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1; }
-
-.modal--container {
-  z-index: 3000;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  background-color: rgba(0, 0, 0, 0.5); }
-  .modal--container .modal {
-    position: fixed;
-    width: 640px;
-    background-color: #f0f5f9;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 96px; }

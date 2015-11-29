@@ -1,0 +1,11 @@
+div(ng-controller="HomeCtrl")
+  div(class="home-box1")
+    h1 The Name Selector
+    p Hi there, Welcome to the site. Here you can add, view, delete and modify users.
+    p I am using angularJS to accomplish this.
+    input(ng-model="userFilter" class="mt" type="text" placeholder="Search For Users...")
+
+  div(class="home-box2 row")
+    div(class="col-12")
+      div(class="user-box animate-repeat" ng-repeat="value in testdata | filter: userFilter")
+        h1 {{ value.first_name }} {{ value.last_name }}

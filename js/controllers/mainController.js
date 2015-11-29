@@ -34,4 +34,9 @@ angular.module('app').controller('MainCtrl', ['$scope', function($scope) {
     console.log("Logging Out");
     $scope.activeUser = "";
   }
+
+  $scope.loadModal = function() {
+    // add css class to modal
+    
+  };
 }]);

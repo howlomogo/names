@@ -4,14 +4,18 @@
 @import '_base';
 @import '_nav';
 
+// Components
+@import './components/_modal';
+
 // Pages
 @import './page/_home';
 @import './page/_profile';
 
+
 footer{
   background-color: $color4;
   color: $color1;
-  padding: $gutter;
+  padding: $gutter-x2;
 }
 
 .main-container{
@@ -31,25 +35,4 @@ footer{
   -webkit-flex:1;
   -ms-flex:1;
   flex:1;
-}
-
-// Move this
-.modal--container {
-  z-index: 3000;
-  position: absolute;
-  left:0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  background-color: rgba(0,0,0,0.5);
-
-  .modal {
-    position: fixed;
-    width: 640px;
-    background-color: $color1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: $gutter-x3;
-  }
 }
