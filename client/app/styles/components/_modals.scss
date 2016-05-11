@@ -1,0 +1,49 @@
+.modal--background {
+  z-index: 3000;
+  position: fixed;
+  left:0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: rgba(0,0,0,0.5);
+
+  .modal--container {
+    position: fixed;
+    width: 640px;
+    background-color: $color1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: $gutter-x2;
+
+    .fa-times-circle {
+      position: absolute;
+      top: $gutter-half;
+      right: $gutter-half;
+      cursor: pointer;
+      font-size: 30px;
+    }
+  }
+
+  .modal--header {
+    width: 100%;
+    padding-bottom: $gutter;
+  }
+  .modal--body {
+    width: 100%;
+  }
+  .modal--footer {
+    width: 100%;
+  }
+}
+
+/* The starting CSS styles for the enter animation */
+.fade.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  opacity:1;
+}

@@ -1,0 +1,33 @@
+.home-box1 {
+  padding: 83px + $gutter-x3 0px $gutter-x2;
+  text-align: center;
+  background-color: $color10;
+  //background-image: url("../img/box1-1.png");
+
+  h1 {
+    color: $color1;
+    font-weight: 800;
+    font-size: 64px;
+    letter-spacing: -1.5px;
+  }
+
+  p {
+    font-family: 'Lato', sans-serif;
+    color: $color1;
+  }
+
+  input {
+    width: 200px;
+  }
+}
+
+.home-box2 {
+  .user-box {
+    width: 200px;
+    height: 200px;
+    background-color: $color5;
+    float: left;
+    margin-left: $gutter-half;
+    margin-bottom: $gutter-half;
+  }
+}

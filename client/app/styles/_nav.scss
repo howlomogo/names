@@ -1,0 +1,58 @@
+.nav-container {
+  position: fixed;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  overflow: auto;
+  transition: background-color 0.2s ease;
+  background-color: $color4;
+  padding: $gutter 0px;
+  text-align: center;
+
+  ul {
+    a {
+      color: $color1;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color7;
+      }
+      li {
+        margin-top: 11px;
+        display: inline-block;
+        padding:  0px $gutter-half;
+      }
+    }
+  }
+}
+
+.navigation-container--no-bg {
+  background-color: transparent;
+}
+
+.page--header {
+  background-color: $color5;
+
+  h2 {
+    margin: 0px;
+  }
+}
+
+.btn {
+  position: absolute; // Change this maybe
+  right: $gutter-x2;
+  border: 2px solid $color1;
+  padding: 8px 16px;
+  background-color: $color10;
+  transition: background-color 0.2s ease;
+  color: $color1;
+  cursor: pointer;
+  &:hover{
+    background-color: $color5;
+  }
+}
+
+// Remove this
+.logout {
+  right: 160px;
+}

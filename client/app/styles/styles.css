@@ -1,0 +1,291 @@
+html, body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0f5f9;
+  height: 100%; }
+
+h1, h2, h3, h4 {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif; }
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin: 8px 0px; }
+
+ul {
+  padding: 0px;
+  margin: 0px; }
+  ul li {
+    list-style-type: none;
+    padding: 4px 0px; }
+
+a {
+  text-decoration: none; }
+
+hr {
+  margin: 0px;
+  border: none;
+  border-top: 1px solid #f0f5f9; }
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  border: solid 1px #ccc;
+  font-size: 16px;
+  padding: 8px 10px;
+  outline: none; }
+  input:focus {
+    border: solid 1px #F55641; }
+
+.box, .col-3, .col-2, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.row {
+  width: 100%;
+  float: left; }
+
+.col-3 {
+  width: 8.33333%;
+  float: left; }
+
+.col-2 {
+  width: 16.66667%;
+  float: left; }
+
+.col-3 {
+  width: 25%;
+  float: left; }
+
+.col-4 {
+  width: 33.33333%;
+  float: left; }
+
+.col-5 {
+  width: 41.66667%;
+  float: left; }
+
+.col-6 {
+  width: 50%;
+  float: left; }
+
+.col-7 {
+  width: 58.33333%;
+  float: left; }
+
+.col-8 {
+  width: 66.66667%;
+  float: left; }
+
+.col-9 {
+  width: 75%;
+  float: left; }
+
+.col-10 {
+  width: 83.33333%;
+  float: left; }
+
+.col-11 {
+  width: 91.66667%;
+  float: left; }
+
+.col-12 {
+  width: 100%;
+  float: left; }
+
+.mt {
+  margin-top: 32px; }
+
+.mt-large {
+  margin-top: 64px; }
+
+.mb {
+  margin-bottom: 32px; }
+
+.mb-large {
+  margin-bottom: 64px; }
+
+.mar {
+  margin: 32px; }
+
+.mar-large {
+  margin: 64px; }
+
+.pt {
+  padding-top: 32px; }
+
+.pt-large {
+  padding-top: 64px; }
+
+.pb {
+  padding-bottom: 32px; }
+
+.pb-large {
+  padding-bottom: 64px; }
+
+.pad, .col-3, .col-2, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding: 32px; }
+
+.pad-large {
+  padding: 64px; }
+
+.text-center {
+  text-align: center; }
+
+.pull-right {
+  float: right; }
+
+.nav-container {
+  position: fixed;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  overflow: auto;
+  transition: background-color 0.2s ease;
+  background-color: #343131;
+  padding: 32px 0px;
+  text-align: center; }
+  .nav-container ul a {
+    color: #f0f5f9;
+    transition: color 0.3s ease; }
+    .nav-container ul a:hover {
+      color: #929292; }
+    .nav-container ul a li {
+      margin-top: 11px;
+      display: inline-block;
+      padding: 0px 16px; }
+
+.navigation-container--no-bg {
+  background-color: transparent; }
+
+.page--header {
+  background-color: #F55641; }
+  .page--header h2 {
+    margin: 0px; }
+
+.btn {
+  position: absolute;
+  right: 64px;
+  border: 2px solid #f0f5f9;
+  padding: 8px 16px;
+  background-color: #398CCE;
+  transition: background-color 0.2s ease;
+  color: #f0f5f9;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #F55641; }
+
+.logout {
+  right: 160px; }
+
+.modal--background {
+  z-index: 3000;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .modal--background .modal--container {
+    position: fixed;
+    width: 640px;
+    background-color: #f0f5f9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 64px; }
+    .modal--background .modal--container .fa-times-circle {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      cursor: pointer;
+      font-size: 30px; }
+  .modal--background .modal--header {
+    width: 100%;
+    padding-bottom: 32px; }
+  .modal--background .modal--body {
+    width: 100%; }
+  .modal--background .modal--footer {
+    width: 100%; }
+
+/* The starting CSS styles for the enter animation */
+.fade.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0; }
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+.home-box1 {
+  padding: 179px 0px 64px;
+  text-align: center;
+  background-color: #398CCE; }
+  .home-box1 h1 {
+    color: #f0f5f9;
+    font-weight: 800;
+    font-size: 64px;
+    letter-spacing: -1.5px; }
+  .home-box1 p {
+    font-family: 'Lato', sans-serif;
+    color: #f0f5f9; }
+  .home-box1 input {
+    width: 200px; }
+
+.home-box2 .user-box {
+  width: 200px;
+  height: 200px;
+  background-color: #F55641;
+  float: left;
+  margin-left: 16px;
+  margin-bottom: 16px; }
+
+.profile-box1 {
+  padding: 83px 0px 32px;
+  background-color: #f0f5f9; }
+
+.animate-repeat {
+  line-height: 40px;
+  list-style: none;
+  box-sizing: border-box; }
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s; }
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity: 0;
+  max-height: 0; }
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity: 1;
+  max-height: 40px; }
+
+footer {
+  background-color: #343131;
+  color: #f0f5f9;
+  padding: 32px; }
+
+.main-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  min-width: 960px; }
+
+.main-content {
+  background-color: #585858;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }

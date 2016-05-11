@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8" />
+  <title>Random Title</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-route/angular-route.min.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/controllers/mainController.js"></script>
+  <script src="js/controllers/homeController.js"></script>
+  <script src="js/controllers/profileController.js"></script>
+</head>
+
+<body ng-controller="MainCtrl" id="mainctrl"> <!-- Rethink where the controller is -->
+  <div id="nav-container" class="nav-container">
+    <div class="btn" ng-if="activeUser === ''" ng-click="openModal('login-modal')">Log In</div>
+    <div class="btn logout" ng-if="activeUser !== ''" ng-click="logout()">Log Out</div>
+
+    <ul>
+      <a href="#home"><li>Home</li></a>
+      <a href="#profile"><li>Profile</li></a>
+    </ul>
+  </div>
+
+  <div class="main-container">
+    <div class="main-content">
+      <div ng-view></div>
+
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="login-modal" ng-show="modalActive" class="modal--background fade">
+    <div class="modal--container">
+      <i class="fa fa-times-circle" ng-click="closeModal()"></i>
+      <div class="modal--header">
+        <h1>Log In</h1>
+      </div>
+      <div class="modal--body">
+        <form ng-if="activeUser === ''" ng-submit="checkName()">
+          First name: <input type="text" ng-model="login_name">
+          <input type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!--           <button on-click="createUser()">Create new user</button>
+ -->
+
+  <footer>Footer</footer>
+        <select ng-model="selectedItem" ng-change="testfunc()" ng-options="field for field in testdata">
+
+
+  <script src="js/nav-hide.js"></script>
+  <!-- <script src="js/server.js"></script> -->
+</body>
+</html>

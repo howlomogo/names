@@ -1,0 +1,37 @@
+@import '_vars';
+@import '_reset';
+@import '_grid';
+@import '_base';
+@import '_nav';
+
+// Components
+@import './components/_modals';
+
+// Pages
+@import './page/_home';
+@import './page/_profile';
+
+footer{
+  background-color: $color4;
+  color: $color1;
+  padding: $gutter;
+}
+
+.main-container{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  width: 100%;
+  min-height: 100%;
+  min-width: $page-width;
+}
+
+.main-content{
+  background-color: $color3;
+  -webkit-box-flex:1;
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1;
+}
